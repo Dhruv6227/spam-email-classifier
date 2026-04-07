@@ -1,11 +1,9 @@
 import streamlit as st
 import pickle
 
-# load model
 model = pickle.load(open("model/model.pkl","rb"))
 vectorizer = pickle.load(open("model/vectorizer.pkl","rb"))
 
-# UI
 st.title("📧 Spam Email Classifier")
 st.write("Enter email text below to check whether it is Spam or Not Spam")
 
