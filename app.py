@@ -1,6 +1,6 @@
 import streamlit as st
 import pickle
-
+#importing streamlit and pickle helps in production of model
 model = pickle.load(open("model/model.pkl","rb"))
 vectorizer = pickle.load(open("model/vectorizer.pkl","rb"))
 
